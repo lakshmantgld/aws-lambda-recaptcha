@@ -10,8 +10,8 @@ This high level architecture would help us understand how we use **reCAPTCHA** i
 ![reCAPTCHA Architecture](https://raw.githubusercontent.com/lakshmantgld/aws-lambda-recaptcha/master/readmeFiles/architecture.png)
 
 ### Overview:
-- Google's reCAPTCHA has to be added in your webpage. Once the user fills the contact form, he has to answer the captcha. Once user submits the form, captcha is sent as part of the request to the Lambda.
-- In Lambda, the user entered captcha is verified with google's captcha API. If the request returns success, then your business logic will be executed. Thus, having captcha prevents our form from spamming abuse.
+- Google's reCAPTCHA has to be added in your webpage. Once the user fills the **contact form**, he has to answer the captcha. Once user submits the form, captcha is sent as part of the request to the Lambda.
+- In Lambda, the user entered captcha is verified with **google's captcha API**. If the request returns success, then your business logic will be executed. Thus, having captcha prevents our form from spamming abuse.
 
 ### Setting up Captcha:
 Since the captcha's information has to be set in **client**(react app) and in **server**(lambda), I have divided the instructions into three sections namely **Registering Captcha**, **Client-Side Integration**, **Server-Side Integration**.
